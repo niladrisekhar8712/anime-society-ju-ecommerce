@@ -12,7 +12,7 @@ export default async function connectDB() {
     }
     if(!cached.promise){
         const opts = {
-            bufferCommand: false
+            buffercommand: false
         }
         cached.promise = (await mongoose.connect(`${process.env.MONGODB_URI}/animeSociety`,opts)).then(mongoose => {
             return mongoose;

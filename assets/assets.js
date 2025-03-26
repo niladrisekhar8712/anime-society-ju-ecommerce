@@ -46,6 +46,8 @@ import product_details_page_apple_earphone_image2 from "./product_details_page_a
 import product_details_page_apple_earphone_image3 from "./product_details_page_apple_earphone_image3.png";
 import product_details_page_apple_earphone_image4 from "./product_details_page_apple_earphone_image4.png";
 import product_details_page_apple_earphone_image5 from "./product_details_page_apple_earphone_image5.png";
+import Dandadan from "./Dandadan.png"
+
 
 export const assets = {
   logo,
@@ -90,6 +92,7 @@ export const assets = {
   sm_controller_image,
   jbl_soundbox_image,
   boy_with_laptop_image,
+  Dandadan,
   product_details_page_apple_earphone_image1,
   product_details_page_apple_earphone_image2,
   product_details_page_apple_earphone_image3,

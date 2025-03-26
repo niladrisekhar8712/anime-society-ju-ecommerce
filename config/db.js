@@ -17,8 +17,11 @@ export default async function connectDB() {
             useUnifiedTopology: true
         };
         // ✅ Corrected: Removed unnecessary await before assigning promise
-        cached.promise = mongoose.connect(`${process.env.MONGODB_URI}/animeSociety`, opts);
+        cached.promise = mongoose.connect(`${process.env.MONGODB_URI}/animeSociety`, opts).then(mongoose => {
+            return mongoose
+        })
     }
     cached.conn = await cached.promise; // ✅ Awaiting the connection
     return cached.conn;
 }
+
